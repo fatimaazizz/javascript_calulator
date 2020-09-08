@@ -1,0 +1,134 @@
+<html>
+  <head>
+  <title>js calculator</title>
+   <style>
+   #head{
+
+   background:black;
+   color: white	;
+   
+   font-weight:30em;
+   font-size:100px;
+
+}
+    body
+   {background:url(cal.jpg);
+   }
+   .div1
+{
+	padding-left:20px;
+    padding-right: 20px;
+	padding-top:20px;
+	width:300px;
+	height:430px;
+	background:#222222;
+	color:white;
+	margin:106px;
+	border-radius:10px;
+	position:absolute;
+    
+    left:370px;
+    top: 10%;
+	color:white;
+	
+	text-decoration:none;
+	font-family:Comic Sans MS;
+     }
+	 #bt
+	 {
+	 border:  2px solid #FFFFFF;
+	height:  70px;
+	width:  70px;
+	text-align:  center;
+
+	font-family:  "Comic Sans MS",cursive, sans-serif;
+	font-size:  50px;
+	color:white;
+	cursor: pointer;
+	 }
+	 #bt1
+	 {
+	 border:  2px solid #FFFFFF;
+	height:  70px;
+	width:  144px;
+	text-align:  center;
+	vertical-align:  middle;
+	font-family:  "Comic Sans MS", cursive, sans-serif;
+	font-size:  50px;
+	color:black;
+	cursor: pointer;
+	 }
+	 #input{
+	 text-align:  right;
+	 font-family:  "Comic Sans MS", cursive, sans-serif;
+	 font-size:  30px;
+	 height:  40px;
+	width:  296px;
+	 }
+	 #bt2{ border:  2px solid #FFFFFF;
+	height:  70px;
+	width:  70px;
+	text-align:  center;
+	vertical-align:  middle;
+	font-family:  "Comic Sans MS", cursive, sans-serif;
+	font-size:  50px;
+	color:red;
+	cursor: pointer;
+	 }
+   
+   </style>
+  </head>
+  <body>
+  <h1 align="center" id="head">simple calculator</h1>
+   <div class="div1">
+   
+    
+    <textarea id="input" readonly="readonly" ></textarea>
+	
+	
+    <table>
+	  <tr>
+	    <td><button  onClick="add7()" id="bt">7</button></td>
+		<td><button onClick="add8()"id="bt">8</button></td>
+		<td><button onClick="add9()"id="bt">9</button></td>
+		<td><button onClick="divs()"id="bt">/</button></td>
+		
+	  </tr>
+	  <tr>
+	    <td><button onClick="add4()"id="bt">4</button></td>
+		<td><button onClick="add5()"id="bt">5</button></td>
+		<td><button onClick="add6()"id="bt">6</button></td>
+		<td><button onClick="mul()"id="bt">X</button></td>
+		
+	  </tr>
+	  <tr>
+	    <td><button onClick="add1()"id="bt">1</button></td>
+		<td><button onClick="add2()"id="bt">2</button></td>
+		<td><button onClick="add3()"id="bt">3</button></td>
+		<td><button onClick="plus()"id="bt">+</button></td>
+		
+	  </tr>
+	  <tr>
+	    <td><button onClick="add0()"id="bt">0</button></td>
+		<td><button onClick="adddot()"id="bt">.</button></td>
+		<td><button onClick="clearr()"id="bt2">c</button></td>
+		<td><button onClick="minus()"id="bt">-</button></td>
+		
+	  </tr>
+	  
+	  
+	</table>
+	<table>
+	<tr>
+	    <td><button onClick="equals()"id="bt1">=</button></td>
+		<td><button onClick="backk()"id="bt1"><-</button></td>
+		
+		
+	  </tr>
+	</table>
+	
+   </div>	
+   <script src="cal.js"></script>
+  </body>
+  
+</html>
